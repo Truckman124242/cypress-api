@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 import user from "../fixtures/user.json";
-import cars from "../fixtures/cars.json";
 describe("Interception for profile page", () => {
   it.only("The intercepted profile information should be visible", () => {
     cy.intercept("GET", "**profile", user);
